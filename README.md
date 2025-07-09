@@ -34,8 +34,8 @@ Este portfólio foi construído utilizando:
 
 
 ## 📇 Informações Pessoais
-📧 Email	vitor.diamantino@email.com
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" /> LinkedIn	linkedin.com/in/vitor-diamantino
+<a href = "mailto:vitorfdiamantino@gmail.com"><img loading="lazy" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="www.linkedin.com/in/vitor-ferreira-diamantino-065678300" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 
 
