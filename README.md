@@ -32,13 +32,8 @@ Este portfólio foi construído utilizando:
 | React Icons       | Biblioteca de ícones                           |
 | EmailJS (opcional)| Envio de e-mails via formulário de contato     |
 
-## 📸 Demonstração
 
-**Em breve:** Link para o projeto publicado  
-Ou visualize localmente seguindo as instruções abaixo.
-
-📇 Informações Pessoais
-Tipo	Informação
+## 📇 Informações Pessoais
 📧 Email	vitor.diamantino@email.com
 💼 LinkedIn	linkedin.com/in/vitor-diamantino
 
