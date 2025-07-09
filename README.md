@@ -1,4 +1,4 @@
-# 🧑‍💻 Vitor Diamantino – Portfólio Pessoal
+#  Vitor Diamantino – Portfólio Pessoal
 
 Bem-vindo ao meu portfólio pessoal! 🚀  
 Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, projetos, experiências e trajetória profissional de forma moderna, interativa e responsiva.
