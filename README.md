@@ -37,19 +37,10 @@ Este portfólio foi construído utilizando:
 **Em breve:** Link para o projeto publicado  
 Ou visualize localmente seguindo as instruções abaixo.
 
-## 🚀 Como Rodar Localmente
+📇 Informações Pessoais
+Tipo	Informação
+📧 Email	vitor.diamantino@email.com
+💼 LinkedIn	linkedin.com/in/vitor-diamantino
 
-Clone o repositório e execute os comandos abaixo:
 
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-portfolio.git
 
-# Acesse a pasta do projeto
-cd seu-portfolio
-
-# Instale as dependências
-npm install
-
-# Inicie o projeto
-npm run dev
