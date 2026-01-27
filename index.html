@@ -14,12 +14,16 @@
     <!-- HEADER / HERO -->
     <header id="home" class="hero">
     <div class="hero-text">
-        <h1>Olá, eu sou o Vitor </h1>
-        <h2>Estudante de Sistemas de Informação</h2>
-        <p>
+        <h1 data-i18n="heroTitle">Vitor Diamantino </h1>
+        <h2>Desenvolvedor Full Stack</h2>
+        <p data-i18n="heroText">
             Apaixonado por tecnologia, desenvolvimento e inovação.
             Busco minha primeira oportunidade como estagiário em TI.
         </p>
+
+        <button id="lang-toggle" class="lang-toggle" aria-label="Alterar idioma">
+        🇧🇷
+        </button>
 
         <nav>
             <a href="#projects">Ver Projetos</a>
@@ -32,7 +36,9 @@
     </div>
 
     <div class="hero-image">
+       <div class="profile-wrapper">
         <img src="/img/FOTO-CV.jpg" alt="Foto de Vitor">
+       </div>
     </div>
 </header>
 
@@ -145,26 +151,44 @@
 
     <!-- CONTATO -->
    <section id="contact">
-    <h2>Contato</h2>
+    <h2 data-i18n="contactTitle">Contato</h2>
 
-    <div class="contact-card">
-        <p>Email: vitor@email.com</p>
-        <p>
-            LinkedIn:
-            <a href="#">linkedin.com/in/vitor</a>
-        </p>
-        <p>
-            GitHub:
-            <a href="#">github.com/vitor</a>
-        </p>
+  <div class="contact-card">
+        <div class="contact-card">
+            <span>🐙</span>
+            <h3>GitHub</h3>
+            <a href="https://github.com/vitor" target="_blank">
+                github.com/vitor
+            </a>
     </div>
+
+     <div class="contact-card">
+            <span>💼</span>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/vitor" target="_blank">
+                linkedin.com/in/vitor
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <span>✉️</span>
+            <h3>Email</h3>
+            <p>vitor@email.com</p>
+        </div>
 </section>
 
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 — Desenvolvido por Vitor</p>
-    </footer>
+    <div class="social-icons">
+        <a href="https://github.com/vitor" target="_blank" aria-label="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/vitor" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="mailto:vitor@email.com" aria-label="Email">✉️</a>
+    </div>
+    <p>© 2026 — Desenvolvido por Vitor</p>
+</footer>
 
+<!-- LUZ DO CURSOR -->
+<div class="cursor-light"></div>
 </body>
 </html>
