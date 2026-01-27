@@ -1,0 +1,348 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+    --bg-color: #0f172a;
+    --card-color: #111827;
+    --primary-color: #38bdf8;
+    --text-color: #e5e7eb;
+    --muted-text: #9ca3af;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* LINKS */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* CONTAINER GERAL */
+header,
+section,
+footer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem 1.5rem;
+}
+
+/* HERO */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 3rem;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+}
+
+
+header p {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: var(--muted-text);
+}
+
+
+/* NAV BOTÕES */
+nav a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #020617;
+    font-weight: 600;
+}
+
+nav a:last-child {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* SEÇÕES */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* SOBRE */
+#about p {
+    max-width: 700px;
+    margin-bottom: 1rem;
+    color: var(--muted-text);
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: var(--card-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover,
+.skill-card.active {
+    transform: translateY(-8px);
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+#skills h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+#skills li {
+    background: var(--card-color);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* PROJETOS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+#projects article {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-5px);
+}
+
+#projects h3 {
+    margin-bottom: 0.5rem;
+}
+
+#projects p {
+    color: var(--muted-text);
+    margin-bottom: 0.5rem;
+}
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info span {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+}
+
+/* EXPERIÊNCIA */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.timeline-dot {
+    position: absolute;
+    left: -1px;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: var(--card-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+}
+#experience article {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+#experience h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* FORMAÇÃO */
+#education p {
+    background: var(--card-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+/* CONTATO */
+.contact-card {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+}
+#contact ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#contact li {
+    margin-bottom: 0.75rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    color: var(--muted-text);
+    padding-bottom: 2rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+
+/* MODE DARK/LIGHT */
+section, .skill-card, .project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.light {
+    --bg-color: #f9fafb;
+    --card-color: #ffffff;
+    --text-color: #020617;
+    --muted-text: #475569;
+}
+
+/*BOTÃO DE TEMA*/
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--card-color);
+    color: var(--text-color);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
