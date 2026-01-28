@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitor Diamantino | Portfólio</title>
+    <meta name="description" content="Portfólio de Vitor, estudante de Sistemas de Informação focado em tecnologia e desenvolvimento.">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
+    <link rel="icon" href="/assets/logo (1).svg" type="image/png">
+
+</head>
+<body>
+
+    <!-- HEADER / HERO -->
+    <header id="home" class="hero">
+    <div class="hero-text">
+        <h1 data-i18n="heroTitle">Vitor Diamantino </h1>
+        <h2 data-i18n="heroSubtitle">Desenvolvedor Full Stack</h2>
+        <p data-i18n="heroText">
+            Apaixonado por tecnologia, desenvolvimento e inovação.
+            Busco minha primeira oportunidade como estagiário em TI.
+        </p>
+
+        <button id="lang-toggle" class="lang-toggle" aria-label="Change language">
+        <img src="/assets/Flag_of_Brazil.svg" alt="Português" />
+        </button>
+
+
+
+        <nav>
+            <a data-i18n="btnProjects" href="#projects">Ver Projetos</a>
+            <a data-i18n="btnContact" href="#contact">Contato</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+    🌙
+</button>
+
+        </nav>
+    </div>
+
+    <div class="hero-image">
+       <div class="profile-wrapper">
+        <img src="/img/FOTO-CV.jpg" alt="Foto de Vitor">
+       </div>
+    </div>
+</header>
+
+    <!-- SOBRE MIM -->
+    <section id="about">
+        <h2 data-i18n="aboutMe">Sobre mim</h2>
+        <p data-i18n="textAboutMe1">
+            Sou estudante de <strong>Sistemas de Informação na FIAP School</strong>, 
+            com interesse em desenvolvimento e tecnologia. 
+            Ao longo da minha formação, venho construindo uma base sólida em lógica de programação, 
+            desenvolvimento web e análise de sistemas.
+        </p>
+
+        <p data-i18n="textAboutMe2">
+            Gosto de aprender coisas novas e de entender como a tecnologia 
+            pode resolver problemas reais. Meu objetivo é iniciar minha carreira em TI, 
+            crescer profissionalmente e evoluir constantemente como desenvolvedor.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+    <h2 data-i18n="skillsTitle">Skills & Tecnologias</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card" data-skill="html">
+            <h3>SQL</h3>
+            <p data-i18n="skilltextSQL">Banco de dados, modelagem de dados e consultas.</p>
+        </div>
+
+        <div class="skill-card" data-skill="css">
+            <h3>CSS</h3>
+            <p data-i18n="skilltextCSS">Criação de layouts modernos, responsivos e animados.</p>
+        </div>
+
+        <div class="skill-card" data-skill="js">
+            <h3>JavaScript</h3>
+            <p data-i18n="skilltextJS">Interatividade, lógica e melhoria da experiência do usuário.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Java</h3>
+            <p data-i18n="skilltextJava">Orientação de objetos, lógica de programação e gerenciamento de memória.</p>
+        </div>
+
+           <div class="skill-card">
+            <h3>C#</h3>
+            <p data-i18n="skilltextCsharp">Desenvolvimento de aplicações com .NET e orientação a objetos.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- PROJETOS -->
+   <section id="projects">
+    <h2 data-i18n="projectsTitle">Projetos</h2>
+
+    <div class="projects-grid">
+        <article class="project-card">
+            <a href="https://carrinho-compras-duxth0vyx-vitordiamantinos-projects.vercel.app">
+            <img src="/img/capa-site-carrinhoDeCompra.png" alt="Projeto Portfólio">
+            </a>
+            <div class="project-info">
+                <h3 data-i18n="projectsH31">Projeto Pessoal</h3>
+                <p data-i18n="projectText1">Site de carrinho de compras com funcionalidades básicas.</p>
+                <span>HTML • CSS • JavaScript</span>
+                
+        </article>
+
+        <article class="project-card">
+            <a href="https://tupas-tcc-oqeu.vercel.app/" target="_blank">
+            <img src="/img/tupans.png" alt="Projeto Acadêmico">
+            </a>
+            <div class="project-info">
+                <h3 data-i18n="projectsH32">Projeto Acadêmico</h3>
+                <p data-i18n="projectText2">Aplicação desenvolvida para aplicar conceitos de sistemas.</p>
+                <span>React • Tailwind.CSS • Next.js</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+    <!-- EXPERIÊNCIAS -->
+ <section id="experience">
+    <h2 data-i18n="experienceTitle">Experiências</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3 data-i18n="exH31">Estágio em TI — FIAP School - 2024</h3>
+                <p data-i18n="exText1">
+                    Planejamento de projetos, análise de mercado,
+                    modelagem de negócios e mentoria técnica.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3 data-i18n="exH32">HS Prevent - Auxiliar a Prevenção a Fraudes - 2025</h3>
+                <p data-i18n="exText2">Análise de dados e identificação de padrões de fraude.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CONTATO -->
+   <section id="contact">
+    <h2 data-i18n="contactTitle">Contato</h2>
+
+  <div class="contact-card">
+    <div class="contact-card">
+        <svg viewBox="0 0 24 24" class="icon">
+                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.1 3.29 9.42 7.86 10.95.57.1.78-.25.78-.55v-2c-3.2.7-3.88-1.39-3.88-1.39-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.72.08-.72 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.75.4-1.27.72-1.56-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.3 1.19-3.11-.12-.3-.52-1.5.11-3.12 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.18-1.19 3.18-1.19.63 1.62.23 2.82.11 3.12.74.81 1.18 1.85 1.18 3.11 0 4.43-2.7 5.4-5.28 5.68.41.36.77 1.08.77 2.18v3.23c0 .3.2.65.79.54A11.53 11.53 0 0 0 23.5 12C23.5 5.74 18.27.5 12 .5z"/>
+            </svg>
+            <h3>GitHub</h3>
+            <a href="https://github.com/agenteV" target="_blank">
+                github.com/agenteV
+            </a>
+    </div>
+    
+
+             <div class="contact-card">
+            <svg viewBox="0 0 24 24" class="icon">
+                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8.5 8h3.8v2.2h.1c.5-.9 1.8-2.2 3.7-2.2 4 0 4.8 2.6 4.8 6V24h-4v-8.1c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.2V24h-4z"/>
+            </svg>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/vitor-diamantino-/" target="_blank">
+                linkedin.com/in/vitor 
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <svg viewBox="0 0 24 24" class="icon">
+                <path d="M2 4h20v16H2zm10 7L4 6h16z"/>
+            </svg>
+            <h3>Email</h3>
+            <p>vitorfdiamantino@gmail.com</p>
+        </div>
+  </div>
+
+    
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <div class="social-icons">
+    </div>
+    <p data-i18n="footerText">© 2026 — Desenvolvido por Vitor</p>
+</footer>
+
+<!-- LUZ DO CURSOR -->
+<div class="cursor-light"></div>
+</body>
+</html>
