@@ -265,20 +265,8 @@ section h2::after {
 }
 
 /* CONTATO */
-.contact-card {
-    background: var(--card-color);
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 400px;
-}
-#contact ul {
-    list-style: none;
-    margin-top: 1rem;
-}
 
-#contact li {
-    margin-bottom: 0.75rem;
-}
+
 
 /* FOOTER */
 footer {
@@ -457,14 +445,25 @@ section, .skill-card, .project-card {
 
 .contact-card {
     background: var(--card-color);
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+    max-width: auto;
+    min-width: auto;
 }
-
+.contact-grid {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    pointer-events: none;
+}
 .contact-card .icon {
     width: 40px;
     height: 40px;
@@ -476,16 +475,20 @@ section, .skill-card, .project-card {
     font-size: 1rem;
 }
 
-.contact-card a
+.contact-card a,
 .contact-card p {
     color: var(--primary-color);
     font-size: 0.9rem;
     margin-top: 0.2rem;
 }
+.contact-grid:hover .contact-card {
+    transform: none;
+}
 
 .contact-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 0 2px var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--primary-color);
+    z-index: 10;
 }
 @media (max-width: 600px) {
     .contact-card {
