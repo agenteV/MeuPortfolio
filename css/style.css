@@ -457,36 +457,42 @@ section, .skill-card, .project-card {
 
 .contact-card {
     background: var(--card-color);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 16px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    max-width: 700px;
-}
 
-.contact-card span {
-    font-size: 2rem;
+.contact-card .icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .contact-card h3 {
-    margin: 0.8rem 0 0.4rem;
+    margin: 0;
+    font-size: 1rem;
 }
 
-.contact-card a {
+.contact-card a
+.contact-card p {
     color: var(--primary-color);
     font-size: 0.9rem;
+    margin-top: 0.2rem;
 }
 
 .contact-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 0 2px var(--primary-color);
 }
-
+@media (max-width: 600px) {
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 /* ÍCONES SOCIAIS NO RODAPÉ */
 .social-icons {
@@ -510,18 +516,37 @@ section, .skill-card, .project-card {
     position: fixed;
     top: 20px;
     right: 80px;
-    background: var(--card-color);
-    border: none;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    font-size: 1.2rem;
+    background: var(--card-color);
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
     z-index: 1000;
+}
+
+.lang-toggle img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
 }
 
 .lang-toggle:hover {
     transform: scale(1.1);
+}
+
+.light .lang-toggle {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+/* ÍCONES PERSONALIZADOS */
+.icon {
+    width: 36px;
+    height: 36px;
+    fill: var(--primary-color);
+    margin-bottom: 0.8rem;
 }
