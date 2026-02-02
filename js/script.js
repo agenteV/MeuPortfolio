@@ -39,7 +39,7 @@ const translations = {
     pt: {
         heroTitle: "Vitor Diamantino",
         heroSubtitle: "Dev Full Stack",
-        heroText: "Apaixonado por tecnologia, desenvolvimento e inovação. Busco minha primeira oportunidade como estagiário em TI.",
+        heroText: "Apaixonado por tecnologia, desenvolvimento e inovação. Possuo experiência profissonal, mas busco minha primeira oportunidade em TI.",
         btnProjects: "Ver Projetos",
         btnContact: "Contato",
 
@@ -72,7 +72,7 @@ const translations = {
     en: {
         heroTitle: "Vitor Diamantino",
         heroSubtitle: "Dev Full Stack",
-        heroText: "Passionate about technology, development, and innovation. Seeking my first opportunity as an IT Intern.",
+        heroText: "Passionate about technology, development, and innovation. Possessing professional experience, but seeking my first opportunity in IT.",
         btnProjects: "View Projects",
         btnContact: "Contact",
 
